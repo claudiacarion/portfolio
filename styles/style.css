@@ -1,5 +1,12 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #1e1e1f;
+  --tertiary: #0f5750;
+  --quaternary: #d8abb7;
+}
+
 * {
- box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 html {
@@ -7,5 +14,20 @@ html {
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface", serif;
+}
+
+.header {
+  background-color: var(--quaternary);
 }
