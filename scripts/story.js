@@ -1,14 +1,3 @@
-const main = document.querySelector(".main-container");
-
-const home = () => {
-  main.innerHTML = `
-  <h1 class="main__title">Hi! I'm Claudia</h1>
-  `;
-};
-
-let homeBtn = document.querySelector("#home-btn");
-homeBtn.onclick = () => home();
-
 const story = () => {
   main.innerHTML = `
   <h1 class="main__title">My Story</h1>
@@ -41,8 +30,3 @@ const story = () => {
 
 let storyBtn = document.querySelector("#story-btn");
 storyBtn.onclick = () => story();
-
-const playground = () => {
-  main.innerHTML = `
-  `;
-};

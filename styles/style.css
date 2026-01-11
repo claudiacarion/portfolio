@@ -35,6 +35,10 @@ h6 {
   justify-content: center;
 }
 
+.menu-btn {
+  color: var(--tertiary);
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -42,8 +46,8 @@ h6 {
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
-    justify-content: space-evenly;
-    width: 60%;
+    justify-content: space-between;
+    width: 40%;
   }
 
   .menu-btn {
@@ -51,6 +55,8 @@ h6 {
   }
 
   .menu-btn:hover {
-    font-style: italic;
+    opacity: 75%;
+    text-shadow: 4px 4px var(--quaternary);
+    transform: scale(1.1);
   }
 }
