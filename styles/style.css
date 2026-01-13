@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  align-items: center;
   display: flex;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
@@ -50,6 +51,7 @@ a {
 
 .main-container {
   flex-grow: 1;
+  overflow: auto;
 }
 
 .main__title {
@@ -63,10 +65,12 @@ a {
 
 .profile-img {
   background-color: var(--quaternary);
+  border-radius: 25px;
   box-shadow: 8px 8px var(--tertiary);
 }
 
 .footer {
+  margin: 32px 0 16px 0;
   text-align: center;
 }
 
@@ -74,7 +78,6 @@ a {
   .navbar {
     display: flex;
     justify-content: space-between;
-    width: 40%;
   }
 
   .menu-btn {
@@ -87,5 +90,9 @@ a {
     box-shadow: 8px 8px var(--tertiary);
     cursor: pointer;
     transition: 0.5s;
+  }
+
+  .main-container {
+    padding: 0 80px;
   }
 }

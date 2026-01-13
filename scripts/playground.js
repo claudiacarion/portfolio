@@ -13,16 +13,26 @@ const projects = () => {
 
 const github = projects => {
   projects.forEach(project => {
-    const name = document.createElement("p");
+    const name = document.createElement("li");
+    name.classList.add("project-li");
     name.innerHTML = `
-    <a href="${project.html_url}" target="_blank">${project.name.charAt(0).toUpperCase() + project.name.slice(1).replace("-", " ")}</a>`;
-    document.querySelector(".list").appendChild(name);
+    <a href="${project.html_url}" target="_blank">${
+      project.name.charAt(0).toUpperCase() + project.name.slice(1).replace("-", " ")
+    }</a>`;
+    document.querySelector(".project-ul").appendChild(name);
   });
 };
 
 const playground = () => {
   return `
-  <h1 class="main__title">My Projects</h1>
+  <h1 class="main__title">My Playground</h1>
+  <h3 class="playground__subtitle">My Tech Skills</h3>
+  <div class="tech-icons">
+    <i class="fa-brands fa-html5"></i>
+    <i class="fa-brands fa-css3-alt"></i>
+    <i class="fa-brands fa-square-js"></i>
+  </div>
+  <h3 class="playground__subtitle">My Projects</h3>
   <div class="gallery">
   <a
     href="https://github.com/claudiacarion/goldenmemeretriever"
@@ -123,10 +133,10 @@ const playground = () => {
       </div>
       </a>
     </div>
-  <h3 class="project__subtitle" id="other-projects">Other Projects:</h3>
-  <ul class="list hide"></ul>
+  <h3 class="project__subtitle" id="other-projects">Show all my repos</h3>
+  <ul class="project-ul hide"></ul>
   `;
-}
+};
 
 const initialize = () => {
   projects()
@@ -138,8 +148,10 @@ const initialize = () => {
     });
 
   const others = document.querySelector("#other-projects");
-  const list = document.querySelector(".list");
+  const list = document.querySelector(".project-ul");
 
-  others.onclick = () => list.classList.toggle("hide");
-}
-
+  others.onclick = () => {
+    list.classList.toggle("hide");
+    others.textContent = list.classList.contains("hide") ? "Show all my repos" : "Show less";
+  };
+};

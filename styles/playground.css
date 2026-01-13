@@ -14,20 +14,38 @@
   text-align: center;
 }
 
-.project-img,
-.profile-img {
+.project-img {
   border-radius: 10px;
 }
 
-.hide {
+.project__subtitle {
+  text-align: center;
+}
+
+.project-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.project-ul.hide {
   display: none;
 }
 
+.project-li {
+  margin: 16px;
+}
+
+.project-li a {
+  border-radius: 50px;
+  padding: 12px 16px;
+}
 
 @media screen and (min-width: 768px) {
   .gallery {
     display: grid;
-     grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
   }
 
   .project-card {
@@ -38,6 +56,23 @@
   .project-card:hover {
     background-color: var(--quaternary);
     box-shadow: 10px 10px var(--tertiary);
+    transition: 0.5s;
+  }
+
+  .project-ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .project__subtitle:hover {
+    color: var(--quaternary);
+    cursor: pointer;
+  }
+
+  .project-li a:hover {
+    background-color: var(--quaternary);
+    box-shadow: 8px 8px var(--tertiary);
+    cursor: pointer;
     transition: 0.5s;
   }
 }
