@@ -37,6 +37,11 @@ p {
   font-weight: 400;
 }
 
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -56,25 +61,9 @@ p {
   text-align: center;
 }
 
-.project-card {
-  border-radius: 25px;
-  margin: 16px;
-  padding: 12px 16px;
-  text-align: center;
-}
-
-.project-img,
-.profile-img {
-  border-radius: 10px;
-}
-
 .profile-img {
   background-color: var(--quaternary);
   box-shadow: 8px 8px var(--tertiary);
-}
-
-.hide {
-  display: none;
 }
 
 .footer {
@@ -97,12 +86,6 @@ p {
     background-color: var(--quaternary);
     box-shadow: 8px 8px var(--tertiary);
     cursor: pointer;
-    transition: 0.5s;
-  }
-
-  .project-card:hover {
-    background-color: var(--quaternary);
-    box-shadow: 10px 10px var(--tertiary);
     transition: 0.5s;
   }
 }

@@ -1,0 +1,43 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #1e1e1f;
+  --tertiary: #0f5750;
+  --quaternary: #ecc5cf;
+}
+
+.project-card {
+  background-color: var(--quaternary);
+  box-shadow: 8px 8px var(--tertiary);
+  border-radius: 25px;
+  margin: 16px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.project-img,
+.profile-img {
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: grid;
+     grid-template-columns: auto auto auto;
+  }
+
+  .project-card {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .project-card:hover {
+    background-color: var(--quaternary);
+    box-shadow: 10px 10px var(--tertiary);
+    transition: 0.5s;
+  }
+}
