@@ -1,5 +1,5 @@
 const story = () => {
-  main.innerHTML = `
+  return `
   <h1 class="main__title">My Story</h1>
   <p>
     For as long as I can remember, I’ve been a creator and a tinkerer. Growing up during Y2K, I got hooked on coding
@@ -27,6 +27,3 @@ const story = () => {
     engaging and interactive web experiences.
   </p>  `;
 };
-
-let storyBtn = document.querySelector("#story-btn");
-storyBtn.onclick = () => story();

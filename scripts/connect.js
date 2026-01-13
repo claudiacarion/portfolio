@@ -1,6 +1,6 @@
 const connect = () => {
-  main.innerHTML = `
-  <h1 class="page-title">Let's connect!</h1>
+  return `
+  <h1 class="main__title">Let's connect!</h1>
   <section class="contact-container">
   <div class="contact">
     <div class="method">
@@ -72,6 +72,3 @@ const connect = () => {
   </div>
 `;
 };
-
-let connectBtn = document.querySelector("#connect-btn");
-connectBtn.onclick = () => connect();
