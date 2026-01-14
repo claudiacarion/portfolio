@@ -5,10 +5,18 @@
   --quaternary: #ecc5cf;
 }
 
+.gallery {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
 .project-card {
   background-color: var(--quaternary);
   box-shadow: 8px 8px var(--tertiary);
-  border-radius: 25px;
+  border-radius: 50px;
   margin: 16px;
   padding: 12px 16px;
   text-align: center;
@@ -16,6 +24,8 @@
 
 .project-img {
   border-radius: 10px;
+  height: auto;
+  max-width: 100%;
 }
 
 .project__subtitle {
@@ -23,8 +33,12 @@
 }
 
 .project-ul {
+  display: grid;
   list-style-type: none;
-  margin: 0;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1rem auto;
+  max-width: 1000px;
   padding: 0;
   text-align: center;
 }
@@ -42,12 +56,16 @@
   padding: 12px 16px;
 }
 
-@media screen and (min-width: 768px) {
-  .gallery {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
+.project-li a:active {
+  background-color: var(--quaternary);
+  box-shadow: 8px 8px var(--tertiary);
+}
 
+#other-projects {
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
   .project-card {
     background-color: transparent;
     box-shadow: none;
@@ -57,11 +75,6 @@
     background-color: var(--quaternary);
     box-shadow: 10px 10px var(--tertiary);
     transition: 0.5s;
-  }
-
-  .project-ul {
-    display: grid;
-    grid-template-columns: auto auto auto;
   }
 
   .project__subtitle:hover {

@@ -1,7 +1,7 @@
 const craft = () => {
   return `
   <h1 class="main__title">My Craft</h1>
-  <div class="tech-icons">
+  <div class="tech-stack">
     <div class="tech-card">
       <h3 class="tech-area">Languages</h3>
         <p class="tech-name">JavaScript</p>
