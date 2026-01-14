@@ -34,7 +34,7 @@ const playground = () => {
     <div class="project-card">
       <h3 class="project-name">Golden (Meme) Retriever</h3>
         <img
-          src="./assets/images/meme.png"
+          src="./assets/images/meme.webp"
           alt="golden meme retriever"
           height="auto"
           width="300px"
@@ -50,7 +50,7 @@ const playground = () => {
     <div class="project-card">
       <h3 class="project-name">Pop In</h3>
           <img
-            src="./assets/images/popin.png"
+            src="./assets/images/popin.webp"
             alt="popin attendance app"
             height="auto"
             width="300px"
@@ -68,7 +68,7 @@ const playground = () => {
       <div class="project-card">
         <h3 class="project-name">The Friendly Lexicon</h3>
           <img
-            src="./assets/images/lexicon.png"
+            src="./assets/images/lexicon.webp"
             alt="the friendly lexicon"
             height="auto"
             width="300px"
@@ -84,7 +84,7 @@ const playground = () => {
       <div class="project-card">
         <h3 class="project-name">Sequence Memory Game</h3>
           <img
-            src="./assets/images/memory.png"
+            src="./assets/images/memory.webp"
             alt="sequence memory game"
             height="auto"
             width="300px"
@@ -99,7 +99,7 @@ const playground = () => {
       <div class="project-card">
         <h3 class="project-name">Aussie Zoo</h3>
           <img
-            src="./assets/images/australiazoo.png"
+            src="./assets/images/australiazoo.webp"
             alt="aussie zoo website"
             height="auto"
             width="300px"
@@ -114,7 +114,7 @@ const playground = () => {
       <div class="project-card">
         <h3 class="project-name">Flick & Feast Roulette</h3>
           <img
-            src="./assets/images/movienight.png"
+            src="./assets/images/movienight.webp"
             alt="flick and feast roulette"
             height="auto"
             width="300px"
