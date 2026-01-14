@@ -26,13 +26,6 @@ const github = projects => {
 const playground = () => {
   return `
   <h1 class="main__title">My Playground</h1>
-  <h3 class="playground__subtitle">My Tech Skills</h3>
-  <div class="tech-icons">
-    <i class="fa-brands fa-html5"></i>
-    <i class="fa-brands fa-css3-alt"></i>
-    <i class="fa-brands fa-square-js"></i>
-  </div>
-  <h3 class="playground__subtitle">My Projects</h3>
   <div class="gallery">
   <a
     href="https://github.com/claudiacarion/goldenmemeretriever"

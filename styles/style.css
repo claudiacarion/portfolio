@@ -52,6 +52,7 @@ a {
 .main-container {
   flex-grow: 1;
   overflow: auto;
+  width: 100%;
 }
 
 .main__title {
@@ -90,9 +91,5 @@ a {
     box-shadow: 8px 8px var(--tertiary);
     cursor: pointer;
     transition: 0.5s;
-  }
-
-  .main-container {
-    padding: 0 80px;
   }
 }

@@ -7,6 +7,9 @@ const routes = {
   story: {
     render: story,
   },
+  craft: {
+    render: craft,
+  },
   playground: {
     render: playground,
     init: initialize,
@@ -33,6 +36,7 @@ const navigate = page => {
 
 document.querySelector("#home-btn").onclick = () => navigate("home");
 document.querySelector("#story-btn").onclick = () => navigate("story");
+document.querySelector("#craft-btn").onclick = () => navigate("craft");
 document.querySelector("#playground-btn").onclick = () => navigate("playground");
 document.querySelector("#connect-btn").onclick = () => navigate("connect");
 
