@@ -4,17 +4,17 @@ const story = () => {
   <div class="story-container">
     <p>
       For as long as I can remember, I’ve been a creator and a tinkerer. Growing up during Y2K, I got hooked on coding
-      through using blogs, where I could tweak the HTML or CSS a little and make my space truly my own. Life took me through a few
-      different careers along the way, giving me plenty of experiences and skills, but my curiosity for tech never
+      through using blogs, where I could tweak the HTML or CSS a little and make my space truly my own. MINDBLOWN! Eventually, life took me through a few
+      different careers, giving me plenty of experiences and skills, but my curiosity for tech never
       really went away.
     </p>
     <p>
-      Eventually, my time as a technology teacher reminded me how much I loved programming. In 2022, I completed
+      Ultimately, my time as a technology teacher reminded me how much I loved programming. In 2022, I completed
       School of Applied Technology’s (SALT) Fullstack JavaScript Developer Bootcamp, where I built fullstack
       applications and got hands-on with modern web technologies.
     </p>
     <p>
-      After the bootcamp, I took some time to figure out my next steps and focus on personal growth while applying to jobs. I studied Swedish,
+      After the bootcamp, while job searching, I took some time to figure out my next steps and focus on personal growth. I studied Swedish,
       going from SVA Grund up to SVA2, which was a fun challenge and kept me disciplined. Even though I wasn’t doing
       much coding during this period, my interest never went away, and it gave me the chance to reset, reflect, and get
       ready to dive back into software development with fresh energy.
