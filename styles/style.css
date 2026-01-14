@@ -93,6 +93,7 @@ a {
 }
 
 .home {
+  margin-top: 32px;
   padding: 32px;
   text-align: center;
 }
@@ -104,6 +105,12 @@ a {
   height: auto;
   max-width: 300px;
   width: 100%;
+}
+
+.home__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
 }
 
 .footer {
@@ -149,7 +156,12 @@ a {
 
   .main__title {
     font-size: 3rem;
-    text-align: center;
+  }
+
+  .home__subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
   }
 
   .profile-img {
