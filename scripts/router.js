@@ -34,10 +34,35 @@ const navigate = page => {
   });
 };
 
-document.querySelector("#home-btn").onclick = () => navigate("home");
-document.querySelector("#story-btn").onclick = () => navigate("story");
-document.querySelector("#craft-btn").onclick = () => navigate("craft");
-document.querySelector("#playground-btn").onclick = () => navigate("playground");
-document.querySelector("#connect-btn").onclick = () => navigate("connect");
+const closeNavbar = () => {
+  if (window.innerWidth < 768) {
+    navbar.classList.remove("active");
+  }
+};
+
+document.querySelector("#home-btn").onclick = () => {
+  navigate("home");
+  closeNavbar();
+};
+
+document.querySelector("#story-btn").onclick = () => {
+  navigate("story");
+  closeNavbar();
+};
+
+document.querySelector("#craft-btn").onclick = () => {
+  navigate("craft");
+  closeNavbar();
+};
+
+document.querySelector("#playground-btn").onclick = () => {
+  navigate("playground");
+  closeNavbar();
+};
+
+document.querySelector("#connect-btn").onclick = () => {
+  navigate("connect");
+  closeNavbar();
+};
 
 navigate("home");

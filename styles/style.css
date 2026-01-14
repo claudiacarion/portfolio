@@ -48,12 +48,34 @@ a {
   text-align: center;
 }
 
+.logo-img {
+  height: 30px;
+  width: 30px;
+}
+
 .navbar {
-  text-align: center;
+  align-items: center;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  transition: max-height 0.6s ease, padding 0.4s ease;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar.active {
+  max-height: 500px;
 }
 
 .menu-btn {
   border-radius: 50px;
+  display: inline-block;
   padding: 12px 16px;
 }
 
@@ -89,9 +111,19 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .logo-img {
+    display: none;
+  }
+
   .navbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    max-height: none;
+    overflow: visible;
+    position: static;
+    top: 0;
+    width: auto;
   }
 
   .menu-btn {
