@@ -8,6 +8,7 @@ const projects = () => {
     })
     .catch(error => {
       console.error("Error: ", error);
+      return [];
     });
 };
 
@@ -134,6 +135,11 @@ const playground = () => {
 const initialize = () => {
   projects()
     .then(data => {
+      if (data.length === 0) {
+        document.querySelector(".project-ul").innerHTML = `
+        <li class="fetch-error">Unable to load projects at the moment. Try again later.</li>`
+        return
+      }
       github(data);
     })
     .catch(error => {

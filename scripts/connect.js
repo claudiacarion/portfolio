@@ -44,30 +44,30 @@ const connect = () => {
     </div>
     <div class="socials">
     <div class="contact-card">
-    <div class="social-btn">
-      <a
-        href="https://www.linkedin.com/in/claudia-pereira-carion/"
-        target="_blank"
-        class="socials-link"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
+      <div class="social-btn">
+        <a
+          href="https://www.linkedin.com/in/claudia-pereira-carion/"
+          target="_blank"
+          class="socials-link"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        </div>
+        <p class="socials-label">Connect on LinkedIn</p>
       </div>
-      <p class="socials-label">Connect on LinkedIn</p>
-    </div>
-    <div class="contact-card">
-        <div class="social-btn">
+      <div class="contact-card">
+          <div class="social-btn">
 
-      <a
-        href="https://github.com/claudiacarion"
-        target="_blank"
-        class="socials-link"
-      >
-        <i class="fa-brands fa-square-github"></i
-      ></a>
+        <a
+          href="https://github.com/claudiacarion"
+          target="_blank"
+          class="socials-link"
+        >
+          <i class="fa-brands fa-square-github"></i
+        ></a>
+        </div>
+        <p class="socials-label">Check out my Github</p>
       </div>
-      <p class="socials-label">Check out my Github</p>
-    </div>
     </div>
   </div>
 `;
@@ -91,7 +91,7 @@ const initContactForm = () => {
 
         setTimeout(() => {
           emailMessage.classList.add("fade");
-        }, 3000);
+        }, 2000);
       },
       error => {
         emailMessage.textContent = "Something went wrong. Please try again.";
@@ -101,7 +101,7 @@ const initContactForm = () => {
 
         setTimeout(() => {
           emailMessage.classList.add("fade");
-        }, 5000);
+        }, 4000);
       }
     );
   });
