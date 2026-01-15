@@ -1,10 +1,8 @@
 const connect = () => {
   return `
   <h1 class="main__title">Let's connect!</h1>
-  <section class="contact-container">
-  <div class="contact">
-    <div class="method">
-      <i class="fa-solid fa-envelope"></i>
+  <div class="contact-container">
+    <div class="contact-card">
       <form class="contact-form" id="contact-form">
         <fieldset class="email">
           <div class="user-input">
@@ -14,7 +12,7 @@ const connect = () => {
               name="from_name"
               id="name"
               placeholder="Enter your name"
-              class="text"
+              class="email-info"
               required
             />
           </div>
@@ -25,7 +23,7 @@ const connect = () => {
               name="from_email"
               id="email"
               placeholder="Enter your email"
-              class="text"
+              class="email-info"
               required
             />
           </div>
@@ -44,25 +42,25 @@ const connect = () => {
         </fieldset>
       </form>
     </div>
-    <div class="method">
+    <div class="contact-card">
       <a
         href="https://www.linkedin.com/in/claudia-pereira-carion/"
         target="_blank"
-        class="link"
+        class="socials-link"
       >
         <i class="fa-brands fa-linkedin"></i>
       </a>
-      <p>Connect on LinkedIn</p>
+      <p class="socials-label">Connect on LinkedIn</p>
     </div>
-              <div class="method">
+    <div class="contact-card">
       <a
         href="https://github.com/claudiacarion"
         target="_blank"
-        class="link"
+        class="socials-link"
       >
         <i class="fa-brands fa-square-github"></i
       ></a>
-      <p>Check out my Github</p>
+      <p class="socials-label">Check out my Github</p>
     </div>
   </div>
 `;

@@ -41,29 +41,22 @@ const closeNavbar = () => {
   }
 };
 
-document.querySelector("#home-btn").onclick = () => {
-  navigate("home");
-  closeNavbar();
+const menuBtns = ["home", "story", "craft", "playground", "connect"];
+
+menuBtns.forEach(page => {
+  const btn = document.querySelector(`#${page}-btn`);
+  if (btn) {
+    btn.onclick = () => {
+      page === "home" ? (history.pushState("", document.title, window.location.pathname), navigate("home")) : (window.location.hash = page);
+      closeNavbar();
+    };
+  }
+});
+
+const loadHash = () => {
+  const page = window.location.hash.replace("#", "") || "home";
+  navigate(page);
 };
 
-document.querySelector("#story-btn").onclick = () => {
-  navigate("story");
-  closeNavbar();
-};
-
-document.querySelector("#craft-btn").onclick = () => {
-  navigate("craft");
-  closeNavbar();
-};
-
-document.querySelector("#playground-btn").onclick = () => {
-  navigate("playground");
-  closeNavbar();
-};
-
-document.querySelector("#connect-btn").onclick = () => {
-  navigate("connect");
-  closeNavbar();
-};
-
-navigate("home");
+window.addEventListener("DOMContentLoaded", loadHash);
+window.addEventListener("hashchange", loadHash);

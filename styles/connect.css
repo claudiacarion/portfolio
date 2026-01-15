@@ -3,12 +3,35 @@
   --fail: #b65b71;
 }
 
+.contact-card {
+  margin: 16px;
+  text-align: center;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
 .email {
   background-color: var(--quaternary);
   box-shadow: 8px 8px var(--tertiary);
   border: none;
   border-radius: 50px;
+  padding: 20px;
+}
+
+.email-info,
+.message-area {
+  border: none;
+  border-radius: 25px;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 8px;
   padding: 16px;
+  width: 100%;
+}
+
+.message-area {
+  min-height: 120px;
 }
 
 .email-message {
@@ -21,4 +44,57 @@
 
 .email-message.fade {
   opacity: 0;
+}
+
+.submit {
+  border: none;
+  border-radius: 15px;
+  background-color: var(--tertiary);
+  color: var(--primary);
+  font-family: "Abril Fatface", serif;
+  padding: 12px 16px;
+}
+
+.fa-brands {
+  border-radius: 50px;
+  font-size: 2rem;
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.socials-label {
+  margin: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 16px;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: none;
+    overflow: visible;
+    position: static;
+    top: 0;
+    width: auto;
+  }
+
+  .menu-btn {
+    border-radius: 50px;
+    padding: 12px 16px;
+  }
+
+  .fa-brands:hover {
+    background-color: var(--quaternary);
+    box-shadow: 8px 8px var(--tertiary);
+    cursor: pointer;
+    transition: 0.5s;
+  }
 }
