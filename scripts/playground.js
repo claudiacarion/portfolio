@@ -126,7 +126,7 @@ const playground = () => {
       </div>
       </a>
     </div>
-  <h3 class="project__subtitle" id="other-projects">Show all my repos</h3>
+  <h3 class="project__subtitle" id="other-projects">See all my repos <i class="fa-solid fa-caret-down"></i></h3>
   <ul class="project-ul hide"></ul>
   `;
 };
@@ -144,7 +144,13 @@ const initialize = () => {
   const list = document.querySelector(".project-ul");
 
   others.onclick = () => {
-    list.classList.toggle("hide");
-    others.textContent = list.classList.contains("hide") ? "Show all my repos" : "Show less";
+    const isHidden = list.classList.toggle("hide");
+    others.innerHTML = isHidden
+      ? `See all my repos <i class="fa-solid fa-caret-down"></i>`
+      : `Show less <i class="fa-solid fa-caret-up"></i>`;
+
+    if (!isHidden) {
+      others.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 };

@@ -9,7 +9,7 @@
   background-color: var(--quaternary);
   box-shadow: 8px 8px var(--tertiary);
   border-radius: 50px;
-  margin: 16px;
+  margin: 8px;
   padding: 12px 16px;
   text-align: center;
 }
@@ -20,8 +20,17 @@
   max-width: 100%;
 }
 
+#other-projects {
+  margin-top: 16px;
+}
+
 .project__subtitle {
   text-align: center;
+}
+
+.project__subtitle:active {
+  color: var(--quaternary);
+  cursor: pointer;
 }
 
 .project-ul {
@@ -51,10 +60,6 @@
 .project-li a:active {
   background-color: var(--quaternary);
   box-shadow: 8px 8px var(--tertiary);
-}
-
-#other-projects {
-  margin-top: 32px;
 }
 
 @media screen and (min-width: 768px) {

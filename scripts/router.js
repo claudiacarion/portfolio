@@ -45,12 +45,21 @@ const menuBtns = ["home", "story", "craft", "playground", "connect"];
 
 menuBtns.forEach(page => {
   const btn = document.querySelector(`#${page}-btn`);
-  if (btn) {
-    btn.onclick = () => {
-      page === "home" ? (history.pushState("", document.title, window.location.pathname), navigate("home")) : (window.location.hash = page);
-      closeNavbar();
-    };
-  }
+  if (!btn) return;
+
+  btn.onclick = () => {
+    if (page === "home") {
+      try {
+        history.pushState("", document.title, window.location.pathname);
+      } catch (e) {
+        console.warn("pushState blocked: ", e);
+      }
+      navigate("home");
+    } else {
+      window.location.hash = page;
+    }
+    closeNavbar();
+  };
 });
 
 const loadHash = () => {
