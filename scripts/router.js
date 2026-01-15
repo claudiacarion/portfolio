@@ -16,6 +16,7 @@ const routes = {
   },
   connect: {
     render: connect,
+    init: initContactForm,
   },
 };
 

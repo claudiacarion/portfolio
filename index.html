@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="header">
-      <img src="./assets/images/menu-logo.webp" alt="menu logo" height="30" width="30" class="logo-img"/>
+      <img src="./assets/images/menu-logo.webp" alt="menu logo" height="30" width="30" class="logo-img" />
       <nav class="navbar">
         <h3 class="menu-btn" id="home-btn">HOME</h3>
         <h3 class="menu-btn" id="story-btn">STORY</h3>
@@ -34,7 +34,13 @@
     </header>
     <main class="main-container"></main>
     <footer class="footer">
-      <h4 class="footer__copyright">&copy; 2026 Claudia Pereira Carion</h4>
+      <p class="footer__copyright">&copy; 2026 Claudia Pereira Carion</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("oRKCiWIZZ_0EW9K3F");
+      })();
+    </script>
   </body>
 </html>

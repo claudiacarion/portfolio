@@ -5,19 +5,13 @@ const connect = () => {
   <div class="contact">
     <div class="method">
       <i class="fa-solid fa-envelope"></i>
-      <form
-        action="mailto: claudia.carion@gmail.com"
-        method="POST"
-        enctype="text/plain"
-        class="user-message"
-      >
+      <form class="contact-form" id="contact-form">
         <fieldset class="email">
-          <legend>Leave me a message</legend>
           <div class="user-input">
             <label for="name">Name* </label>
             <input
               type="text"
-              name="name"
+              name="from_name"
               id="name"
               placeholder="Enter your name"
               class="text"
@@ -28,7 +22,7 @@ const connect = () => {
             <label for="email">Email* </label>
             <input
               type="email"
-              name="email"
+              name="from_email"
               id="email"
               placeholder="Enter your email"
               class="text"
@@ -46,6 +40,7 @@ const connect = () => {
             ></textarea>
           </div>
           <button class="submit">Send</button>
+          <p class="email-message fade" id="email-message"></p>
         </fieldset>
       </form>
     </div>
@@ -71,4 +66,38 @@ const connect = () => {
     </div>
   </div>
 `;
+};
+
+const initContactForm = () => {
+  const form = document.querySelector("#contact-form");
+  const emailMessage = document.querySelector("#email-message");
+
+  if (!form || !emailMessage) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_yrlzcql", "template_wma1if9", "#contact-form").then(
+      () => {
+        emailMessage.textContent = "Message sent!";
+        emailMessage.style.color = "var(--success)";
+        emailMessage.classList.remove("fade");
+        form.reset();
+
+        setTimeout(() => {
+          emailMessage.classList.add("fade");
+        }, 3000);
+      },
+      error => {
+        emailMessage.textContent = "Something went wrong. Please try again.";
+        emailMessage.style.color = "var(--fail)";
+        emailMessage.classList.remove("fade");
+        console.error("EmailJS error: ", error);
+
+        setTimeout(() => {
+          emailMessage.classList.add("fade");
+        }, 5000);
+      }
+    );
+  });
 };
