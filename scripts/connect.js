@@ -7,35 +7,15 @@ const connect = () => {
         <fieldset class="email">
           <div class="user-input">
             <label for="name">Name* </label>
-            <input
-              type="text"
-              name="from_name"
-              id="name"
-              placeholder="Enter your name"
-              class="email-info"
-              required
-            />
+            <input type="text" name="from_name" id="name" placeholder="Enter your name" class="email-info" required />
           </div>
           <div class="user-input">
             <label for="email">Email* </label>
-            <input
-              type="email"
-              name="from_email"
-              id="email"
-              placeholder="Enter your email"
-              class="email-info"
-              required
-            />
+            <input type="email" name="from_email" id="email" placeholder="Enter your email" class="email-info" required />
           </div>
           <div class="user-input">
             <label for="message">Message*</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Enter your message"
-              class="message-area"
-              required
-            ></textarea>
+            <textarea name="message" id="message" placeholder="Enter your message" class="message-area" required></textarea>
           </div>
           <button class="submit">Send</button>
           <p class="email-message fade" id="email-message"></p>
@@ -43,28 +23,19 @@ const connect = () => {
       </form>
     </div>
     <div class="socials">
-    <div class="contact-card">
-      <div class="social-btn">
-        <a
-          href="https://www.linkedin.com/in/claudia-pereira-carion/"
-          target="_blank"
-          class="socials-link"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
+      <div class="contact-card">
+        <div class="social-btn">
+          <a href="https://www.linkedin.com/in/claudia-pereira-carion/" target="_blank" class="socials-link">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <p class="socials-label">Connect on LinkedIn</p>
       </div>
       <div class="contact-card">
-          <div class="social-btn">
-
-        <a
-          href="https://github.com/claudiacarion"
-          target="_blank"
-          class="socials-link"
-        >
-          <i class="fa-brands fa-square-github"></i
-        ></a>
+        <div class="social-btn">
+          <a href="https://github.com/claudiacarion" target="_blank" class="socials-link">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
         </div>
         <p class="socials-label">Check out my Github</p>
       </div>
