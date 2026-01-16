@@ -3,9 +3,9 @@ const story = () => {
   <h1 class="main__title">My Story</h1>
   <div class="story-container">
     <p>
-      For as long as I can remember, I’ve been a creator and a tinkerer. Growing up during Y2K, I got hooked on coding
-      through using blogs, where I could tweak the HTML or CSS a little and make my space truly my own. MINDBLOWN! Eventually, life took me through a few
-      different careers, giving me plenty of experiences and skills, but my curiosity for tech never
+      For as long as I can remember, I’ve been a creator and a tinkerer. Growing up around the Y2K, I got hooked on coding
+      through blogs, where I could tweak a bit of HTML or CSS and make my space truly my own. Mind blown! Eventually, life led me through a few
+      different careers, giving me a wide range of experiences and skills, but my curiosity for tech never
       really went away.
     </p>
     <p>
@@ -14,8 +14,8 @@ const story = () => {
       applications and got hands-on with modern web technologies.
     </p>
     <p>
-      After the bootcamp, while job searching, I took some time to figure out my next steps and focus on personal growth. I studied Swedish,
-      going from SVA Grund up to SVA2, which was a fun challenge and kept me disciplined. Even though I wasn’t doing
+      After the bootcamp, while also job searching, I took some time to figure out my next steps and focus on personal growth. I studied Swedish,
+      going from SVA Grund up to SVA2, which was a fun challenge and helped me stay disciplined. Even though I wasn’t doing
       much coding during this period, my interest never went away, and it gave me the chance to reset, reflect, and get
       ready to dive back into software development with fresh energy.
     </p>
